@@ -34,6 +34,13 @@ client.on('message', message => { // When the message a message is executed
 
 });
 
+
+if(command === "say"){
+  let text = args.slice(1).join("hi");
+  message.delete();
+  message.channel.send(text);
+}
+
  
 
 // THIS  MUST  BE  THIS  WAY
