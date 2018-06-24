@@ -22,6 +22,20 @@ client.on('message', message => { // When the message a message is executed
 
 });
 
+});
+
+ 
+
+client.on('message', message => { // When the message a message is executed
+
+    if (message.content === 'b') { // if that message matches ping
+
+       message.reply('c'); // 
+
+       }
+
+});
+
  
 
 // THIS  MUST  BE  THIS  WAY
